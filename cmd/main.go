@@ -1,8 +1,8 @@
 package main
 
 import (
-	"berksArrUs/pkg/domain"
-	"berksArrUs/pkg/storage_service"
+	"github.com/berksArrUs/pkg/domain"
+	"github.com/berksArrUs/pkg/storage_service"
 	"encoding/json"
 	"fmt"
 	"log"

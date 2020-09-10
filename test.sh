@@ -2,26 +2,27 @@
 
 echo "starting berks webserver"
 
-osascript <<EOF
-    tell application "iTerm"
-        tell current window
-            create tab with default profile
-            -- split horizontally with default profile
-        end tell
-        tell current tab of current window
-            set _new_session to last item of sessions
-        end tell
-        tell _new_session
-            select
-            write text "cd go/src/berksArrUs"
-            write text "go run cmd/main.go"
-        end tell
-    end tell
-EOF
+# this piece works if you have a vanilla go install on Mac OS with iTerm
+# osascript <<EOF
+#     tell application "iTerm"
+#         tell current window
+#             create tab with default profile
+#             -- split horizontally with default profile
+#         end tell
+#         tell current tab of current window
+#             set _new_session to last item of sessions
+#         end tell
+#         tell _new_session
+#             select
+#             write text "cd ~/go/src/github.com/berksArrUs"
+#             write text "go run cmd/main.go"
+#         end tell
+#     end tell
+# EOF
 
-echo "waiting a bit for webserver to be ready..."
-# TODO: use the root route as a readiness check
-sleep 5s
+# echo "waiting a bit for webserver to be ready..."
+# # TODO: use the root route as a readiness check
+# sleep 5s
 
 
 echo "done sleeping, loading test data"

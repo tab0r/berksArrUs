@@ -1,8 +1,8 @@
 package storage_service
 
 import (
-	"berksArrUs/pkg/domain"
-	"berksArrUs/pkg/repos"
+	"github.com/berksArrUs/pkg/domain"
+	"github.com/berksArrUs/pkg/repos"
 	"errors"
 )
 

@@ -1,7 +1,7 @@
 package repos
 
 import (
-	"berksArrUs/pkg/domain"
+	"github.com/berksArrUs/pkg/domain"
 	"errors"
 )
 
